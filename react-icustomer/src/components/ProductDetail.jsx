@@ -13,7 +13,7 @@ function ProductDetail() {
   useEffect(() => {
     const fetchProductDetail = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/products/${id}`, {
+        const response = await fetch(`https://icustomer.onrender.com/products/${id}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }

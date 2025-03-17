@@ -30,6 +30,7 @@ function Login() {
             <div className="card-body p-4">
               <h2 className="text-center mb-1">B2B Data Catalog</h2>
               <h5 className="text-center text-muted mb-4">Login</h5>
+              <p>It may take some time for Backend to start. Please wait.</p>
               
               <form onSubmit={handleSubmit}>
                 {error && (

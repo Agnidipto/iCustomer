@@ -15,7 +15,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        let url = 'http://localhost:5000/products';
+        let url = 'https://icustomer.onrender.com/products';
         
         // Add query params for filtering
         const params = new URLSearchParams();
@@ -48,7 +48,7 @@ function Dashboard() {
 
     const fetchCategories = async () => {
       try {
-        const response = await fetch('http://localhost:5000/categories', {
+        const response = await fetch('https://icustomer.onrender.com/categories', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
